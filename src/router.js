@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
-import About from './views/About.vue'
-import Certifications from './views/Certifications.vue'
+import DKACalculator from './views/DKACalculator.vue'
+import PaedsHub from './views/PaedsHub.vue'
+import TheMoodMonitor from './views/TheMoodMonitor.vue'
 
 Vue.use(Router)
 
@@ -16,17 +17,22 @@ export default new Router({
       component: Home
     },
     {
-      path: '/about',
-      name: 'about',
-      component: About
-
+      path: '/dkacalculator',
+      name: 'dkacalculator',
+      component: DKACalculator
     },
     {
-      path: '/certifications',
-      name: 'certifications',
-      component: Certifications
-
+      path: '/paedshub',
+      name: 'paedshub',
+      component: PaedsHub
+    },
+    {
+      path: '/themoodmonitor',
+      name: 'themoodmonitor',
+      component: TheMoodMonitor
     }
   ],
-
+  scrollBehavior () {
+    return { x: 0, y: 0 }
+  }
 })

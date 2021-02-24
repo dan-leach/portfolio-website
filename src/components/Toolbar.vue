@@ -1,48 +1,46 @@
 <template>
   <nav>
-    <v-toolbar flat dark fixed>
-      <v-toolbar-side-icon v-on:click="drawer =! drawer" class="grey--text hidden-md-and-up"></v-toolbar-side-icon>
-      <v-toolbar-title class="text-uppercase grey--text">
-        <span class="font-weight-light-uppercase white--text">H</span>
-        <span>G</span>
+    <v-toolbar dark fixed>
+      <v-toolbar-title>
+        <span class="font-weight-light-uppercase white--text">&#160;&#160;&#62;_&#160;&#160;&#160;</span>
+        <span class="text-uppercase grey--text">Dan Leach</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
 
       <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn flat color="grey" router to="/">Home</v-btn>
-        <v-btn flat color="grey" router to="/certifications">Certifications</v-btn>
+        <v-btn flat color="grey" router to="/"><v-icon>mdi-home</v-icon></v-btn>
+        <v-btn flat color="grey" @click.stop="dialog = true"><v-icon>mdi-email</v-icon></v-btn>
       </v-toolbar-items>
     </v-toolbar>
-    <v-navigation-drawer dark app fixed v-model="drawer" disable-resize-watcher width="200">
-      <v-list app>
-        <v-list-tile v-for="page in pages" v-bind:key="page.text" router v-bind:to="page.route">
-          <v-list-tile-action>
-            <v-icon class="white--text">{{page.icon}}</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title class="white--text">{{page.text}}</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
-      </v-list>
-    </v-navigation-drawer>
+          <v-dialog 
+          max-width="250"
+          v-model="dialog"
+          >
+        <v-card
+          
+          opacity="0.5"
+          color="rgba(0, 0, 0, 0.5)"
+        >
+          <v-card-text class="text-xs-center">
+              <v-btn href="mailto:web@danleach.uk">web@danleach.uk</v-btn>
+              <v-divider></v-divider>
+              <v-btn href="https://github.com/dan-leach"><v-icon>mdi-github</v-icon>dan-leach</v-btn>
+          </v-card-text>
+        </v-card>
+    </v-dialog>
+
   </nav>
+
+  
 </template>
 <script>
+
 export default {
   data() {
     return {
-      drawer: false,
-      pages: [
-        { icon: "home", text: "Home", route: "/" },
-        {
-          icon: "golf_course",
-          text: "Certifications",
-          route: "/certifications"
-        }
-        // { icon: "insert_comment", text: "Contact", route: "/contact" }
-      ]
-    };
-  }
+      dialog: false,
+    }
+  },
 };
 </script>
 

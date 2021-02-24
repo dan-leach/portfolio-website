@@ -3,8 +3,7 @@
     <v-layout justify-center row wrap>
       <div>
         <p>
-          &copy;2020 -
-          <b>Himshikhar Gayan</b>
+          &copy; 2021 Dan Leach
         </p>
       </div>
     </v-layout>
