@@ -147,7 +147,7 @@ export default {
               {
                 name: "web",
                 icon: "mdi-web",
-                link: "https://feedback.danleach.co.uk"
+                link: "https://feedback.danleach.uk"
               },
               {
                 name: "github",
