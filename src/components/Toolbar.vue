@@ -17,8 +17,6 @@
           v-model="dialog"
           >
         <v-card
-          
-          opacity="0.5"
           color="rgba(0, 0, 0, 0.5)"
         >
           <v-card-text class="text-xs-center">

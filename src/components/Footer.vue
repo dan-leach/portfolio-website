@@ -1,5 +1,5 @@
 <template>
-  <v-footer class="pa-2" height="50" dark fixed>
+  <v-footer class="pa-2" height="50" color="rgba(0, 0, 0, 0.7)" dark fixed>
     <v-layout justify-center row wrap>
       <div>
         <p>

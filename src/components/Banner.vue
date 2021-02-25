@@ -2,7 +2,7 @@
     <div class="home text-xs-center" id="home">
         <v-container fluid class="ma-0 pa-0">
             <v-parallax
-                height="800"
+                height="900"
                 dark
                 src="code.jpg"
                 >

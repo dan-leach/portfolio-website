@@ -33,43 +33,7 @@ export default {
   data() {
     return {
       projectList: [
-          {
-            name: "DKA Calculator",
-            price: "LIVE",
-            logo: "dka-logo.png",
-            route: "projects/dkacalculator",
-            platforms: [
-              {
-                name: "web",
-                icon: "mdi-web",
-                link: "https://dka-calculator.co.uk"
-              },
-              {
-                name: "github",
-                icon: "mdi-github",
-                link: "https://github.com/dan-leach"
-              }
-            ],
-            description:
-              "DKA Calculator for BSPED",
-            technologies: [
-              {
-                name: "Javascript",
-                icon: "mdi-language-javascript",
-                link: ""
-              },
-              {
-                name: "PHP",
-                icon: "mdi-language-php",
-                link: ""
-              },
-              {
-                name: "SQL",
-                icon: "mdi-database",
-                link: ""
-              }
-            ]
-          },
+          //Paeds Hub
           {
             name: "Paeds Hub",
             price: "UNDER DEVELOPMENT",
@@ -83,7 +47,7 @@ export default {
               }
             ],
             description:
-              "Online education website for Severn and Peninsula Schools of Paediatrics",
+              "An education website for Severn and Peninsula Schools of Paediatrics that will host interactive eLearning on a range of paediatric topics where users can enroll, track progress and complete courses.",
             technologies: [
               {
                 name: "Wordpress",
@@ -102,80 +66,7 @@ export default {
               }
             ]
           },
-          {
-            name: "The Mood Monitor",
-            price: "LIVE",
-            logo: "mood-logo.png",
-            route: "projects/themoodmonitor",
-            platforms: [
-              {
-                name: "web",
-                icon: "mdi-web",
-                link: "https://dka-calculator.co.uk"
-              },
-              {
-                name: "github",
-                icon: "mdi-github",
-                link: "https://github.com/dan-leach"
-              }
-            ],
-            description:
-              "Mood Monitor for the Children's Ward at RUH Bath",
-            technologies: [
-              {
-                name: "Javascript",
-                icon: "mdi-language-javascript",
-                link: ""
-              },
-              {
-                name: "PHP",
-                icon: "mdi-language-php",
-                link: ""
-              },
-              {
-                name: "SQL",
-                icon: "mdi-database",
-                link: ""
-              }
-            ]
-          },
-          {
-            name: "Feedback Tool",
-            price: "LIVE",
-            logo: "feedback-logo.png",
-            route: "projects/feedbacktool",
-            platforms: [
-              {
-                name: "web",
-                icon: "mdi-web",
-                link: "https://feedback.danleach.co.uk"
-              },
-              {
-                name: "github",
-                icon: "mdi-github",
-                link: "https://github.com/dan-leach"
-              }
-            ],
-            description:
-              "Feedback Tool for providing requesting and providing anonymous feedback on teaching sessions.",
-            technologies: [
-              {
-                name: "Svelte",
-                icon: "mdi-language-javascript",
-                link: ""
-              },
-              {
-                name: "PHP",
-                icon: "mdi-language-php",
-                link: ""
-              },
-              {
-                name: "SQL",
-                icon: "mdi-database",
-                link: ""
-              }
-            ]
-          },
+          //Portfolio
           {
             name: "Portfolio Site",
             price: "LIVE",
@@ -194,7 +85,7 @@ export default {
               }
             ],
             description:
-              "Portfolio site for my projects.",
+              "A portfolio website built to current responsive web-design standards to show my tech projects. Uses VueJS frontend with Vuetify UI framework and vue-router with dynamically rendered project cards and pages.",
             technologies: [
               {
                 name: "VueJS",
@@ -208,6 +99,121 @@ export default {
               }
             ]
           },
+          //DKA Calculator
+          {
+            name: "DKA Calculator",
+            price: "LIVE",
+            logo: "dka-logo.png",
+            route: "projects/dkacalculator",
+            platforms: [
+              {
+                name: "web",
+                icon: "mdi-web",
+                link: "https://dka-calculator.co.uk"
+              },
+              {
+                name: "github",
+                icon: "mdi-github",
+                link: "https://github.com/dan-leach"
+              }
+            ],
+            description:
+              "A registered medical device which generates an individualised patient protocol for the management of paediatric diabetic ketoacidosis with fluid rates prefilled to reduce errors, and stores audit data with ID linkage.",
+            technologies: [
+              {
+                name: "Javascript",
+                icon: "mdi-language-javascript",
+                link: ""
+              },
+              {
+                name: "PHP",
+                icon: "mdi-language-php",
+                link: ""
+              },
+              {
+                name: "SQL",
+                icon: "mdi-database",
+                link: ""
+              }
+            ]
+          },
+          //Feedback Tool
+          {
+            name: "Feedback Tool",
+            price: "LIVE",
+            logo: "feedback-logo.png",
+            route: "projects/feedbacktool",
+            platforms: [
+              {
+                name: "web",
+                icon: "mdi-web",
+                link: "https://feedback.danleach.co.uk"
+              },
+              {
+                name: "github",
+                icon: "mdi-github",
+                link: "https://github.com/dan-leach"
+              }
+            ],
+            description:
+              "A web app that generates feedback invitations for teaching session facilitators to share with their delegates who can then provide anonymous feedback including ratings that are delivered directly to a pre-specified email.",
+            technologies: [
+              {
+                name: "Svelte",
+                icon: "mdi-language-javascript",
+                link: ""
+              },
+              {
+                name: "PHP",
+                icon: "mdi-language-php",
+                link: ""
+              },
+              {
+                name: "SQL",
+                icon: "mdi-database",
+                link: ""
+              }
+            ]
+          },
+          //The Mood Monitor
+          {
+            name: "The Mood Monitor",
+            price: "LIVE",
+            logo: "mood-logo.png",
+            route: "projects/themoodmonitor",
+            platforms: [
+              {
+                name: "web",
+                icon: "mdi-web",
+                link: "https://themoodmonitor.co.uk"
+              },
+              {
+                name: "github",
+                icon: "mdi-github",
+                link: "https://github.com/dan-leach"
+              }
+            ],
+            description:
+              "A web app built for the quality improvement team on the Children's Ward in Bath. Collects anonymous submissions of morale indicators and comments, and displays these in a admin dashboard.",
+            technologies: [
+              {
+                name: "Javascript",
+                icon: "mdi-language-javascript",
+                link: ""
+              },
+              {
+                name: "PHP",
+                icon: "mdi-language-php",
+                link: ""
+              },
+              {
+                name: "SQL",
+                icon: "mdi-database",
+                link: ""
+              }
+            ]
+          },
+          //Rota Manager
           {
             name: "Rota Manager",
             price: "LIVE",
@@ -215,7 +221,7 @@ export default {
             route: "projects/rotamanager",
             platforms: [],
             description:
-              "Rota Manager for medical rotas.",
+              "An spreadsheet tool for managing medical rotas, this workbook automatically highlights gaps and locum shifts in advance, creates a outlook email with a weekly rota, amongst other functions for efficient rota management.",
             technologies: [
               {
                 name: "Excel",
@@ -229,6 +235,7 @@ export default {
               }
             ]
           },
+          //SIFT Calculator
           {
             name: "SIFT Calculator",
             price: "LIVE",
@@ -236,7 +243,7 @@ export default {
             route: "projects/siftcalculator",
             platforms: [],
             description:
-              "SIFT Ladder for NICU.",
+              "Produces a step-by-step plan with pre-calculated milk volumes based on the SIFT trial, using a neonate's weight and certain clinical characteristics, with input validation and rounding.",
             technologies: [
               {
                 name: "Excel",
@@ -250,6 +257,7 @@ export default {
               }
             ]
           },
+          //Hedgehog Handover
           {
             name: "Hedgehog Handover",
             price: "DEPRECATED",
@@ -257,7 +265,7 @@ export default {
             route: "projects/hedgehoghandover",
             platforms: [],
             description:
-              "Hedgehog Handover for NICU.",
+              "This tool tracked neonates on intravenous antibiotics at Southmead Hospital NICU and produced schedules for medication administration, blood sampling and auto-generated discharge letters.",
             technologies: [
               {
                 name: "Excel",
@@ -271,6 +279,7 @@ export default {
               }
             ]
           },
+          //Paediatric CPR Scribe
           {
             name: "Paediatric CPR Scribe",
             price: "DEPRECATED",
@@ -284,7 +293,7 @@ export default {
               }
             ],
             description:
-              "Hedgehog Handover for NICU.",
+              "An android app that recorded events with timings during paediatric resuscitation episodes, including prompts for reassessment and drug administration.",
             technologies: [
               {
                 name: "MIT App Inventor 2",

@@ -1,13 +1,31 @@
 <template>
-
-  <div id="project" class="mt-4">
-    <v-layout row wrap class="home text-xs-center">
-      <v-flex xs12 sm12 lg12>
-        <p class=" font-weight-light mt-5 " style="font-size:35px;">{{selected.title}}</p>
-        <v-divider ></v-divider>
-        <p>{{selected.description}}</p>
-      </v-flex>
+  <div id="project">
+    <v-card height="70px" flat></v-card>
+    <v-layout row wrap align-center justify-center>
+      <v-card
+        elevation="5"
+        style="border-radius: 20px"
+        width="100px"
+        height="100px"
+        >
+        <v-img :src="logo(selected.logo)"/>
+      </v-card>
+      <v-card width="50px" flat></v-card>
+      <p class=" font-weight-light mt-5 display-3" style="font-size:35px;">
+        {{selected.title}}
+      </p>
     </v-layout>
+    <v-divider ></v-divider>
+    <p>{{selected.description}}</p>
+    <v-divider ></v-divider>
+    <v-carousel>
+    <v-carousel-item
+      v-for="(image,i) in selected.images"
+      :key="i"
+      :src="image.src"
+      >
+    </v-carousel-item>
+  </v-carousel>
   </div>
 </template>
 
@@ -19,16 +37,30 @@ export default {
     return{
       selected: {
         title: "Error: no such project as '" + this.$route.params.project + "'",
-        description: "You have navigated to a project page that does not exist or that I haven't got round to building yet. :("
+        description: "You have navigated to a project page that does not exist or that I haven't got round to building yet. :(",
+        logo: "portfolio-logo.png",
+        images: [],
       },
       projects: {
         dkacalculator: {
           title: "DKA Calculator",
-          description: "DKA Calculator for BSPED."
+          description: "This page is under construction.",
+          logo: "dka-logo.png",
+          images: [
+          {
+            src: 'https://danleach.uk/code.jpg',
+          },
+        ],
         },
         paedshub: {
           title: "Paeds Hub",
-          description: "Online education website for Severn and Peninsula Schools of Paediatrics."
+          description: "This page is under construction",
+          logo: "paedshub-logo.png",
+          images: [
+          {
+            src: 'https://danleach.uk/code.jpg',
+          },
+        ],
         }
       }
     }
@@ -36,14 +68,16 @@ export default {
   mounted(){
     for (var key in this.projects) {
       if (key===this.$route.params.project) {
-        this.selected.title = this.projects[key].title
-        this.selected.description = this.projects[key].description
+        this.selected = this.projects[key]
         break;
       }
     }
+  },
+  methods: {
+    logo(name) {
+      return require("../assets/" + name);
+    }
   }
-
-  
 }
 </script>
 
