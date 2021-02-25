@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <v-toolbar dark fixed>
+    <v-toolbar :color="barcolor" dark fixed>
       <v-toolbar-title>
         <span class="font-weight-light-uppercase white--text">&#160;&#160;&#62;_&#160;&#160;&#160;</span>
         <span class="text-uppercase grey--text">Dan Leach</span>
@@ -33,14 +33,16 @@
 
   
 </template>
+
 <script>
 
 export default {
-  data() {
-    return {
-      dialog: false,
+    data() {
+      return {
+        dialog: false,
+        barcolor: "rgba(0, 0, 0, 0.7)"
+      };
     }
-  },
-};
-</script>
+}
 
+</script>

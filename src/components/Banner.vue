@@ -15,7 +15,7 @@
                             src="https://avatars.githubusercontent.com/u/40143685"
                         >
                     </v-avatar>
-                    <p class="font-weight-thick mt-2" style="font-size:50px; background: rgba(0,0,0, 0.7); -webkit-text-stroke: 1px black;">Paediatric Doctor | Web Dev Hobbyist</p>
+                    <p class="font-weight-thick mt-2" style="font-size:50px; background: rgba(0,0,0, 0.7); -webkit-text-stroke: 1px black;">Paediatric Doctor | Web Dev Hobbyist | VBA Superuser</p>
                 </v-layout>
             </v-parallax>
         </v-container>
